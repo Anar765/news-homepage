@@ -1,0 +1,117 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url("./assets/fonts/static/Inter-Regular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url("./assets/fonts/static/Inter-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url("./assets/fonts/static/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@theme {
+
+  /* <------ Primary ------> */
+
+  --color-Soft-Orange: hsl(35, 77%, 62%);
+  --color-Soft-Red: hsl(5, 85%, 63%);
+
+  /* <------ Neutral ------> */
+
+  --color-Off-white: hsl(36, 100%, 99%);
+  --color-Grayish-Blue: hsl(233, 8%, 79%);
+  --color-Dark-Grayish-Blue: hsl(236, 13%, 42%);
+  --color-Very-Dark-Blue: hsl(240, 100%, 5%);
+
+  /* <------ Font ------> */
+
+  --text-base: 15px;
+  --font-inter: 'Inter', sans-serif;
+
+  --animate-navbar: navbar 0.3s linear;
+
+  @keyframes navbar {
+    0% {
+      transform: translateX(15rem);
+    }
+    100% {
+      transform: translateX(0rem);
+    }
+  }
+  
+}
+
+@layer base {
+
+  html {
+    @apply font-inter 
+  }
+
+  body {
+    @apply min-h-[100vh] text-base text-Dark-Grayish-Blue bg-Off-white flex justify-center items-center;
+  }
+
+  #root {
+    @apply h-[100%] w-[100%] px-4 py-8 flex flex-col items-center space-y-12 max-w-[75rem];
+  }
+
+  #root > * {
+    @apply w-full
+  }
+
+  h1 {
+    @apply text-5xl
+  }
+
+  hr {
+    @apply border-[1px] border-Dark-Grayish-Blue my-8
+  }
+
+  a, button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .new h3 {
+    @apply text-white text-xl font-bold mb-2 cursor-pointer hover:text-Soft-Orange
+  } 
+
+  nav li a {
+    @apply hover:text-Soft-Red
+  }
+
+
+}
+
+@layer utilities {
+  .card {
+    @apply flex gap-6
+  }
+
+  .card img {
+    @apply min-w-[7rem] w-[5%]
+  }
+
+  .card .text {
+    @apply space-y-2
+  }
+
+  .card h1 {
+    @apply text-Soft-Red font-bold text-4xl
+  }
+
+  .card .text h4 {
+    @apply text-[16px] text-Very-Dark-Blue font-extrabold cursor-pointer hover:text-Soft-Red
+  }
+
+}
