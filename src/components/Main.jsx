@@ -10,7 +10,7 @@ const Main = () => {
     <main className='grid gap-16 md:grid-cols-3 md:grid-row-3 md:gap-6'>
       <div className='flex flex-col space-y-6 md:row-span-2 md:col-span-2'>
         <picture className='self-center'>
-          <source media="(min-width: 768px)" srcset={ImageWebDesktop} />
+          <source media="(min-width: 768px)" srcSet={ImageWebDesktop} />
           <img src={ImageWebMobile} alt="Image web" />
         </picture>
 

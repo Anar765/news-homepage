@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage-solution-with-reactjs-tailwind-grid-HzKcepWTCT)
+- Live Site URL: (https://news-homepage-ten-kohl.vercel.app/)
 
 ## My process
 
